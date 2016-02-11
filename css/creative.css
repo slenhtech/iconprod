@@ -57,7 +57,7 @@ p {
 
 .bg-dark {
     color: #fff;
-    background-color: #222;
+    background-color: #1D4580;
 }
 
 .text-faded {
@@ -114,13 +114,21 @@ aside {
 .navbar-default .nav>li.active>a:focus {
     color: #1B5EA2!important;
     background-color: transparent;
+    font-weight: bold;
 }
 
 .navbar-default .nav > li.active>a:hover,
 .navbar-default .nav>li.active>a:focus:hover {
     background-color: transparent;
 }
-
+@media(max-width: 768px) {
+    .navbar-brand .text-logo {
+        display: inline-block;
+    }
+    .navbar-brand .img-logo {
+        display: none;
+    }
+}
 @media(min-width:768px) {
     .navbar-default {
         border-color: rgba(255,255,255,.3);
@@ -128,7 +136,15 @@ aside {
     }
 
     .navbar-default .navbar-header .navbar-brand {
-        color: rgba(255,255,255,.7);
+        color: #fff;
+    }
+
+    .navbar-brand .text-logo {
+        display: none;
+    }
+
+    .navbar-brand .img-logo {
+        display: inline-block;
     }
 
     .navbar-default .navbar-header .navbar-brand:hover,
@@ -138,7 +154,7 @@ aside {
 
     .navbar-default .nav > li>a,
     .navbar-default .nav>li>a:focus {
-        color: rgba(255,255,255,.7);
+        color: rgba(255,255,255,1);
     }
 
     .navbar-default .nav > li>a:hover,
@@ -178,7 +194,7 @@ header {
     min-height: auto;
     text-align: center;
     color: #fff;
-    background-image: url(../img/header.jpg);
+    background-image: url(../img/1.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -208,9 +224,17 @@ header .header-content .header-content-inner p {
     margin-bottom: 50px;
     font-size: 16px;
     font-weight: 300;
-    color: rgba(255,255,255,.7);
+    color: #fff;
 }
-
+.pt-20 {
+    padding-top: 20px;
+}
+.pb-20 {
+    padding-bottom: 20px;
+}
+footer a{
+    color: #fff;
+}
 @media(min-width:768px) {
     header {
         min-height: 100%;
